@@ -30,8 +30,6 @@ def check_eligibility(state, household_size, annual_income):
             # exit the loop once we've found the correct ami value and dont need to continue checking other household sizes
             break
 
-    # ami = ami_by_state[state][household_size - 1]
-
     # if annual income is below the ami for their household size,
     if annual_income <= ami:
         # they are eligible
